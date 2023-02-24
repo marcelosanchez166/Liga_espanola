@@ -1,0 +1,34 @@
+"""cuantos usuarios 
+Local en una sola maquina
+
+
+cuantos juegos en total
+
+tabla central equipos, con foraneas a Tabla fecha
+
+Una tabla con el campo de tipo Datetime con la fecha y la hora en un mismo campo para hacer una sola tabla con ambos valores
+recordar que hay que hacer una comparacion de fechas y horas, para validar si hay espacio para meter otro partido"""
+#Crear Otra tabla con los horarios disponbibles de los equipos
+
+
+"""Progamar por jornadas Puede ser una buena idea"""
+
+
+
+
+"""Una tabla resultados donde se vayan guardando los resultados de los partidos diarios y luego que se elimine """
+
+
+
+#INSERT INTO equipos VALUES (NULL,"Jueves y Viernes", "FC pedros","pedro","12:00pm a 3:00pm")
+
+#SELECT * FROM `equipos`  WHERE Dia LIKE '%Martes%' AND Hora LIKE '%12:00pm%'
+
+#SELECT * FROM equipos
+
+#DELETE FROM equipos
+
+#UPDATE equipos SET Horario="Lunes a 12:00 a 3:00pm" WHERE Id=1
+
+
+#DROP TABLE Posiciones_grupo1 #Para borrar tablas de una base de datos
