@@ -63,7 +63,7 @@ class Menu(Frame):
         # Partidos.Partidoss.match(self)
 
     def openEstadisticas(self):
-        Posicioness()
+        Posiciones.Posicioness()
         #Posicioness()
 
 

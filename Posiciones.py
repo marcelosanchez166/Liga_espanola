@@ -17,10 +17,6 @@ class Posicioness:
     #self.Frameposiciones.config(bd=2)#tamaño al borde del frame
         self.Frameposiciones.config(relief="raised")#tipo de marco para el frame
 
-        
-
-
-    #def TablaPosiciones(self):
         """Configuracion para darle estilo a la tabla de treeview"""
         stilos=ttk.Style()
         stilos.theme_use("clam")#default,clam,alt
@@ -60,6 +56,12 @@ class Posicioness:
         self.Tabla.column("#8", width=50, anchor=CENTER)
         self.Tabla.heading("#9", text="Pts", anchor=CENTER)
         self.Tabla.column("#9", width=50, anchor=CENTER)
+
+        botonviewposiciones=Button(self.Frameposiciones, text="Mostrar Equipos", command=self.TablaPosiciones )#crea un boton con texto dentro y se le pasa la funcion boton1
+        botonviewposiciones.config(bg="#008B8B", fg="#191970", font=("Courier", 12, "italic"))
+        botonviewposiciones.grid(row=19, column=13,pady=4,sticky="nes")
+
+    def TablaPosiciones(self):
         Conexion.Cone = DataBase()
         #Crear Puntero
         Conexion.Cone.cursor.execute("SELECT * FROM  Posiciones ORDER BY Pts ASC")
@@ -78,6 +80,3 @@ class Posicioness:
                 #y si le pongo 0 los muestra de mayor a menor
         Conexion.Cone.connec.commit()
 
-        botonviewposiciones=Button(self.Frameposiciones, text="Mostrar Equipos" )#crea un boton con texto dentro y se le pasa la funcion boton1
-        botonviewposiciones.config(bg="#008B8B", fg="#191970", font=("Courier", 12, "italic"))
-        botonviewposiciones.grid(row=19, column=13,pady=4,sticky="nes")
